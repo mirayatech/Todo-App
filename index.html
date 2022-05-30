@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Todo List App</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- wrapper -->
     <div class="wrapper">
-        <!-- Task Input -->
-        <div class="task-input">
-            <i class="fa-solid fa-bars-staggered"></i>
-            <input type="text" placeholder="Add a new task">
+      <!-- Task Input -->
+      <div class="task-input">
+        <i class="fa-solid fa-bars-staggered"></i>
+        <input type="text" placeholder="Add a new task" />
+      </div>
+      <!-- Controls - Filters -->
+      <div class="controls">
+        <div class="filters">
+          <span id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
         </div>
-        <!-- Controls - Filters -->
-        <div class="controls">
-            <div class="filters">
-                <span id="all">All</span>
-                <span id="pending">Pending</span>
-                <span id="completed">Completed</span>
-            </div>
-            <button class="clear-btn">Clear All</button>
-        </div>
-        <!-- ALl tasks -->
-        <ul class="task-box">
-            <li class="task">
-                <label for="">
-                    <input type="checkbox" id="1">
-                    <p>Renew gym membership</p>
-                </label>
-                <!-- settings -->
-                <div class="settings">
-                    <i class="fa-solid fa-ellipsis"></i>
-                </div>
-            </li>
-        </ul>
-
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <!-- ALl tasks -->
+      <ul class="task-box">
+        <li class="task">
+          <label for="">
+            <input type="checkbox" id="1" />
+            <p>Renew gym membership</p>
+          </label>
+          <!-- settings -->
+          <div class="settings">
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </li>
+      </ul>
     </div>
 
-
     <script src="./app.js"></script>
-</body>
-
+  </body>
 </html>
