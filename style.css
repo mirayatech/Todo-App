@@ -99,7 +99,7 @@ li {
   pointer-events: none;
   transition: transform 0.25s ease;
   /* background: linear-gradient(135deg, #1798fb 0%, #2d5cfe 100%); */
-  background: linear-gradient(135deg, #81fbb6, #05c059);
+  background: linear-gradient(135deg, #80cea2, #23d171);
 }
 
 .clear-btn:active {
