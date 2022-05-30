@@ -8,3 +8,11 @@
 body {
   background: #3fdf94;
 }
+/* wrapper */
+.wrapper {
+  padding: 28px 0;
+  max-width: 405px;
+  margin: 135px auto;
+  background: #fff;
+  border-radius: 10px;
+}
