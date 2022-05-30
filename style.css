@@ -61,3 +61,27 @@ body {
 .task-input input::placeholder {
   color: #bfbfbf;
 }
+
+/* Controls */
+.controls,
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  padding: 18px 25px;
+  border-bottom: 1px solid #ccc;
+}
+
+.filters span {
+  margin: 0 8px;
+  color: #444;
+  cursor: pointer;
+  font-size: calc(17 / 16 * 1rem);
+}
+
+.filters span:first-child {
+  margin-left: 0;
+}
