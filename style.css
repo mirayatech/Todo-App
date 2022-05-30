@@ -18,9 +18,10 @@ body {
 
 /* wrapper */
 .wrapper {
-  padding: 28px 0;
+  padding: 28px 0 30px;
   max-width: 405px;
   margin: 135px auto;
   background: #fff;
   border-radius: 10px;
+  box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.1);
 }
