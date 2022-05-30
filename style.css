@@ -62,7 +62,7 @@ body {
   color: #bfbfbf;
 }
 
-/* Controls */
+/* Controls (filters)  */
 .controls,
 li {
   display: flex;
@@ -104,3 +104,59 @@ li {
 .clear-btn:active {
   transform: scale(0.93);
 }
+
+/* Tasks */
+.task-box {
+  margin-top: 20px;
+  margin-right: 5px;
+  padding: 0 20px 10px 25px;
+}
+
+.task-box::-webkit-scrollbar {
+  width: 5px;
+}
+.task-box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+.task-box::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+.task-box .task {
+  list-style: none;
+  font-size: calc(17 / 16 * 1rem);
+  margin-bottom: 18px;
+  padding-bottom: 16px;
+  align-items: flex-start;
+  border-bottom: 1px solid #ccc;
+}
+.task-box .task:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding: 0;
+}
+
+.task-box .task label {
+  display: flex;
+  align-items: flex-start;
+}
+.task label input {
+  margin-top: 7px;
+  accent-color: #3c87ff;
+}
+.task label p {
+  user-select: none;
+  margin-left: 12px;
+  word-wrap: break-word;
+}
+
+.task-box .settings {
+  position: relative;
+}
+
+.settings :where(i, li) {
+  cursor: pointer;
+}
+
