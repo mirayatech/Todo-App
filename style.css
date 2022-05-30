@@ -18,10 +18,46 @@ body {
 
 /* wrapper */
 .wrapper {
-  padding: 28px 0 30px;
   max-width: 405px;
   margin: 135px auto;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 7px;
+  padding: 28px 0 30px;
   box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Tasks Input */
+.task-input {
+  height: 52px;
+  padding: 0 25px;
+  position: relative;
+}
+
+.task-input i {
+  top: 50%;
+  color: #bfbfbf;
+  position: absolute;
+  font-size: calc(18 / 16 * 1rem);
+  transform: translate(17px, -50%);
+}
+
+.task-input input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 20px 0 50px;
+  transition: all 0.3s ease;
+  border: 1px solid #bfbfbf;
+  font-size: calc(18 / 16 * 1rem);
+}
+
+.task-input input:focus,
+.task-input input:active {
+  padding-left: 52px;
+  border: 1px solid #3fdf94;
+}
+
+.task-input input::placeholder {
+  color: #bfbfbf;
 }
