@@ -24,15 +24,15 @@ function showTodo() {
           <i onclick="showMenu(this)" class="fa-solid fa-ellipsis"></i>
           <ul class="task-menu">
               <li><i class="fa-solid fa-pen"></i>Edit</li>
-              <li><i class="fa-regular fa-trash-can"></i>Delete</li>
+              <li onclick="deleteTask(${id})"><i class="fa-regular fa-trash-can"></i>Delete</li>
           </ul>
       </div>
   </li>`;
     });
   }
-
   taskBox.innerHTML = li;
 }
+
 showTodo();
 
 // Show task Menu
@@ -46,6 +46,14 @@ function showMenu(selectedTask) {
       taskMenu.classList.remove("show");
     }
   });
+}
+
+// Delete Task
+function deleteTask(deleteId) {
+  // Delete task from local storage
+  todos.splice(deleteId, 1);
+  localStorage.setItem("todo-list", JSON.stringify(todos));
+  showTodo();
 }
 
 // Update the status (checkbox)
