@@ -21,7 +21,7 @@ function showTodo() {
       </label>
       <!-- settings -->
       <div class="settings">
-          <i class="fa-solid fa-ellipsis"></i>
+          <i onclick="showMenu(this)" class="fa-solid fa-ellipsis"></i>
           <ul class="task-menu">
               <li><i class="fa-solid fa-pen"></i>Edit</li>
               <li><i class="fa-regular fa-trash-can"></i>Delete</li>
@@ -32,6 +32,20 @@ function showTodo() {
   }
 
   taskBox.innerHTML = li;
+}
+showTodo();
+
+// Show task Menu
+function showMenu(selectedTask) {
+  // getting task menu div
+  let taskMenu = selectedTask.parentElement.lastElementChild;
+  taskMenu.classList.add("show");
+  document.addEventListener("click", (e) => {
+    // removing show class from the task menu on the document click
+    if (e.target.tagName != "I" || e.target != selectedTask) {
+      taskMenu.classList.remove("show");
+    }
+  });
 }
 
 // Update the status (checkbox)
