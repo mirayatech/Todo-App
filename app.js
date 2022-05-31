@@ -34,8 +34,7 @@ function showTodo(filter) {
                                 <input onclick="updateStatus(this)" type="checkbox" id="${id}" ${completed}>
                                 <p class="${completed}">${todo.name}</p>
                             </label>
-                            <div class="settings">
-                                <i onclick="showMenu(this)"  class="fa-solid fa-gear"></i>
+                            <div class="settings"><i onclick="showMenu(this)" class="fa-solid fa-ellipsis"></i>
                                 <ul class="task-menu">
                                     <li onclick='editTask(${id}, "${todo.name}")'><i class="fa-solid fa-pen"></i>Edit</li>
                                     <li onclick='deleteTask(${id}, "${filter}")'><i class="fa-regular fa-trash-can"></i>Delete</li>
