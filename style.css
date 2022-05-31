@@ -245,10 +245,24 @@ li {
 
   .filters span {
     margin: 0 5px;
+    font-size: 1rem;
   }
 
   .task-input {
-    padding: 0 20px;
+    height: 42px;
+    padding: 0 15px;
+  }
+
+  .task-input input {
+    font-size: 1rem;
+  }
+  .controls .clear-btn {
+    font-size: calc(14 / 16 * 1rem);
+    padding: 7px 10px;
+  }
+
+  p {
+    font-size: calc(15 / 16 * 1rem);
   }
 
   .controls {
@@ -262,5 +276,9 @@ li {
   }
   .task label input {
     margin-top: 4px;
+  }
+
+  .task-menu li {
+    font-size: calc(14 / 16 * 1rem);
   }
 }
