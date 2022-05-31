@@ -86,6 +86,9 @@ li {
   margin-left: 0;
 }
 
+.filters span.active {
+  color: #23d171;
+}
 .controls .clear-btn {
   border: none;
   outline: none;
@@ -113,6 +116,11 @@ li {
   padding: 0 20px 10px 25px;
 }
 
+.task-box.overflow {
+  overflow-y: auto;
+  max-height: 300px;
+}
+
 .task-box::-webkit-scrollbar {
   width: 5px;
 }
@@ -123,6 +131,7 @@ li {
 
 .task-box::-webkit-scrollbar-thumb {
   background: #e6e6e6;
+  border-radius: 25px;
 }
 
 .task-box .task {
@@ -143,6 +152,7 @@ li {
   display: flex;
   align-items: flex-start;
 }
+
 .task label input {
   margin-top: 7px;
   accent-color: #3c87ff;
@@ -152,7 +162,9 @@ li {
   margin-left: 12px;
   word-wrap: break-word;
 }
-
+.task label p.checked {
+  text-decoration: line-through;
+}
 .task-box .settings {
   position: relative;
 }
@@ -180,6 +192,10 @@ li {
   bottom: -65px;
   transform-origin: top right;
 }
+.task-menu.show {
+  transform: scale(1);
+}
+
 .task-menu li {
   height: 25px;
   font-size: 16px;
