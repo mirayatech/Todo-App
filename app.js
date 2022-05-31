@@ -32,6 +32,17 @@ function showTodo() {
   taskBox.innerHTML = li;
 }
 
+// Update the status (checkbox)
+function updateStatus(selectedTask) {
+  // getting paragraph that contains tska name
+  let taskName = selectedTask.parentElement.lastElementChild;
+  if (selectedTask.checked) {
+    taskName.classList.add("checked");
+  } else {
+    taskName.classList.remove("checked");
+  }
+}
+
 // Every ime we write and hit enter ,we add to the localstorage
 taskInput.addEventListener("keyup", (e) => {
   let userTask = taskInput.value.trim();
