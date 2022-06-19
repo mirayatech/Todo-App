@@ -29,7 +29,7 @@ body {
   background-image: linear-gradient(315deg, #3284f8 0%, #839df1 74%);
 }
 
-/* wrapper */
+
 .wrapper {
   max-width: 405px;
   margin: 135px auto;
@@ -39,7 +39,7 @@ body {
   box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.1);
 }
 
-/* Tasks Input */
+
 .task-input {
   height: 52px;
   padding: 0 25px;
@@ -76,7 +76,6 @@ body {
   color: var(--light-grey);
 }
 
-/* Controls (filters)  */
 .controls,
 li {
   display: flex;
@@ -131,7 +130,6 @@ li {
   transform: scale(0.98);
 }
 
-/* Tasks */
 .task-box {
   margin-top: 20px;
   margin-right: 5px;
