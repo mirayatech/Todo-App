@@ -11,7 +11,6 @@ A Todo List where you can organize your day. Everything is stored in the `Local 
 
 ## How it looks 🎥
 
-**Live:**  https://todolistapplist.netlify.app/
 
 
 
